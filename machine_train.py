@@ -36,7 +36,7 @@ def cross_validation(model, num_of_fold, train_data, train_label):
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Data set can be found on 
-training_dataset_dir = os.path.join(current_dir, "plates_dataset")
+training_dataset_dir = os.path.join(current_dir, "ALP")
 image_data, target_data = read_training_data(training_dataset_dir)
 
 svc_model = SVC(kernel="linear", probability=True)
